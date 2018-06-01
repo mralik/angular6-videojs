@@ -1,5 +1,5 @@
 # Angular6Videojs
-This is a simple angular 6 project with videojs that you can run and play the video.
+This is a simple angular 6 project with [VideoJS](https://videojs.com/) that you can run and play the video.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
 
