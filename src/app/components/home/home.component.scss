@@ -1,0 +1,21 @@
+.wrapper {
+  background: linear-gradient(rgba(252,92,125,.5),rgba(106,130,251,.5)), url("/assets/images/mountain.jpg") no-repeat center center;
+  height: calc(100vh - 50px);
+  //min-height: 700px;
+  min-height: 100%;
+  min-width: 100%;
+  background-size: cover;
+}
+
+h1 {
+  background: linear-gradient(to right, #ff9c9ccf 20%, #2be084 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 3vw;
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
+
+}

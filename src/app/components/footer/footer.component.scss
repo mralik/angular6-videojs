@@ -1,0 +1,31 @@
+footer {
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #484848;
+  height: 50px;
+
+
+  .container-fluid {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h6 {
+    color: #f3f3ff;
+  }
+
+
+  @media screen and (max-width: 767px) {
+    height: auto;
+
+    .container-fluid {
+      padding: 14px;
+      flex-direction: column;
+    }
+  }
+}
+
+
+

@@ -1,0 +1,183 @@
+#main-navbar {
+  background-color: #484848;
+  color: white;
+  z-index: 9999;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  padding: 6px 0px;
+  @media (max-width: 768px) {
+    padding: 6px 16px;
+  }
+
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+
+  h2 {
+    color: white;
+  }
+
+  img {
+    height: 44px;
+  }
+}
+
+
+.navbar-toggler {
+  outline: white;
+  border: none;
+
+  svg {
+    color: #adadad;
+  }
+}
+
+.user-initial {
+  display: inline-block;
+  font-size: 12px;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.6em;
+  text-align: center;
+  border-radius: 50%;
+  background: #949494;
+  vertical-align: top;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+
+.user-initial:hover {
+  background: #7f7f7f;
+}
+
+.user-navbar {
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    //Fix medium devices
+    @media (max-width: 992px) {
+      flex-direction: row;
+    }
+
+    li {
+      margin-left: 8px;
+      font-size: 22px;
+
+      //Fix medium devices
+      @media (max-width: 992px) {
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+
+      @media (max-width: 765px) {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-size: 16px;
+      }
+    }
+
+    .dropdown-toggle {
+
+      &::after {
+        display: none
+      }
+
+      svg {
+        width: 30px;
+        height: 30px;
+        display: flex;
+      }
+    }
+
+  }
+
+}
+
+.dropdown-menu-wrapper {
+  background: #212121;
+  color: white;
+  width: 200px;
+  position: absolute;
+  top: 40px;
+  margin: 0;
+  border: none;
+  border-radius: 2px;
+
+  &::after {
+    background: transparent none repeat scroll 0 0;
+    content: "m";
+    display: block;
+    font-size: 0;
+    position: absolute;
+    right: 16px;
+    top: -7px;
+    z-index: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #212121;
+  }
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  flex-direction: column;
+
+  .wlc {
+    font-size: 14px;
+  }
+
+  svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .name {
+    font-size: 12px;
+    font-style: italic;
+    margin: 8px 0;
+  }
+
+}
+
+.dropdown-item {
+  padding: 6px 16px;
+  margin-top: 8px;
+  text-align: center;
+
+  &:hover {
+    color: grey !important;
+    font-weight: bold;
+    svg {
+      color: grey;
+    }
+  }
+
+  &:active, &:focus {
+    background-color: white;
+    color: grey;
+  }
+}
+
+
+.nav-link {
+  padding: 0 .5rem;
+  svg {
+    color: #adadad;
+
+    &:hover {
+      color: grey;
+    }
+  }
+}
